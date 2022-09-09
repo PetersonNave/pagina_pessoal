@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@keyframes color_change {
+	from { fill: #0d6efd; }
+	to { fill: #24292f; }
+}
+@keyframes location_color {
+	from { fill: rgba(213,23,23,0.6); }
+	to { fill: rgba(213,23,23,0.8); }
+}
+@keyframes image_color_change{
+	from {    box-shadow: 0 0 2em #0d6efd; }
+	to { box-shadow: 0 0 2em white; }
+}
+main{
+    padding-top: 85px;
+}
+header{
+    background-color: rgb(112.520718,44.062154,249.437846);
+    border-bottom: 1px solid #f2f2f2;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 5px black;
+}
+footer{
+    background-color: rgb(112.520718,44.062154,249.437846);
+    border-top: 1px solid #f2f2f2;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 24px;
+}
+footer span{
+    color: white;
+    font-family: "Roboto";
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px #000;
+
+}
+.header_container{
+    width: 100%;
+    max-width: 1236px;
+    padding: 8px 24px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo_image{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 100%;
+    box-shadow: 0 0 1em aqua;
+}
+.logo_container p{
+    color: white;
+    font-family: "Roboto";
+    font-size: 12px;
+    width: 50px;
+    margin-top: 4px;
+    text-shadow: 0 0 2em aqua;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding: 0px 12px;
+    width: 100%;
+    min-width: 352px;
+}
+.menu_link{
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+.menu_link:hover{
+   font-size: 0.875rem;
+   text-shadow: 0 0 1em aqua;
+}
+.social_medias{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0px 8px;
+}
+.social_medias li a{
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    display: flex;
+    align-items: center;
+}
+.social_medias li a:hover{
+   text-shadow: 0 0 1em aqua;
+}
+.social_medias li a:hover > svg{
+  animation: color_change 1s infinite alternate;  
+  filter: drop-shadow(0px 0px 3px white);
+}
+.social_name{
+    margin-left: 4px;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1236px;
+    padding: 0px 24px;
+    margin: 0px auto;
+    padding-bottom: 60px;
+}
+
+.h1_and_image{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+.h1_and_image img{
+    border-radius: 100%;
+    height: 280px;
+    width: 280px;
+    animation: image_color_change 0.8s infinite alternate;  
+
+}
+h1{
+    font-size: 3rem;
+    font-family: "Open Sans";
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 1px #000;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.boas_vindas{
+    background: rgb(0,112,255);
+    background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(33,33,176,1) 49%, rgba(112,44,249,1) 100%);
+}
+.infos{
+    color: #fff;
+    -webkit-text-stroke: 0.1px #000;
+
+}
+.location{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.location > svg{
+    height: 50px;
+    width: 50px;
+    animation: location_color 0.8s infinite alternate;  
+
+}
+.location > p{
+    font-family: "Open Sans";
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 0.5px #000;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 1.875rem;
+    margin-left: 12px;
+}
+
+
+.sobre_mim{
+    background-color: #f2f2f2;
+}
+.container > h2{
+    font-size: 3rem;
+    padding-top: 40px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 28px;
+}
+.sobre_mim p{
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    line-height: 32px;
+}
+
+.cargo_atual{
+    background: rgb(0,112,255);
+    background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(33,33,176,1) 49%, rgba(112,44,249,1) 100%);
+
+}
+.cargo_atual svg{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.cargo_atual h2{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.cargo_atual span{
+    margin-left: 12px;
+}
+
+.cargo_name{
+    font-size: 2rem;
+    font-family: "Open Sans";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.cargo_name > img{
+    height: 50px;
+}
+.cargo_name{
+    margin-top: 50px;
+}
+.cargo_name span{
+    margin-left: 12px;
+    color: white;
+}
+.cargo_description{
+    margin-top: 16px;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    color: white;
+    max-width: 720px;
+    margin-left: 40px;
+}
+hr{
+    margin: 24px 0px;
+}
+.skills_ul{
+    padding-left: 20px;
+    margin-top: 24px;
+}
+.skills_ul li{
+    line-height: 32px;
+    font-size: 1.25rem;
+    font-family: "Open Sans";
+}
+.skills_ul li:hover{
+       text-shadow: 0 0 1em rgba(33,33,176,1);
+}
+.grey_text{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 789px) {
+    .h1_and_image{
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1_and_image h1{
+        font-size: 2rem;
+    }
+    .h1_and_image img{
+        width: 150px;
+        height: 150px;
+        margin-top: 24px;
+    }
+    .infos p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .container{
+        padding-bottom: 24px;
+    }
+    .container h2{
+        padding-top: 24px;
+        margin-bottom: 16px;
+        font-size: 2rem;
+    }
+    .container h2 svg{
+        width: 32px;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .cargo_name{
+        margin-left: 0px;
+        margin-top: 24px;
+        font-size: 1rem;
+    }
+    .cargo_name img{
+        width: 32px;
+        height: 32px;
+    }
+    .grey_text{
+        font-size: 0.785rem;
+    }
+    .cargo_description{
+        margin-left: 0px;
+        font-size: 0.875rem !important;
+    }
+    .skills_ul li{
+        font-size: 0.875rem;
+    }
+    footer span{
+        font-size: 1rem;
+    }
+    .header_container{
+        flex-direction: column;
+    }
+    .menu_link{
+        font-size: 0.875rem;
+    }
+    nav{
+        margin-top: 16px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .social_medias{
+        margin-top: 16px;
+    }
+    .logo_container{
+        position: fixed;
+        right: 15px;
+        top: 50px;        
+    }
+    .logo_image{
+        box-shadow: 0 0 0.2em black;
+    }
+    .logo_container p{
+        text-shadow: 0 0 0.7em black;
+    }
+}
